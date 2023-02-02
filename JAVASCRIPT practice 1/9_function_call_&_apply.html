@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+    <link rel="styt/css" href="font/font/css/all.css">
+
+    <style>
+     
+    </style>
+
+</head>
+  <p id="practice"></p>
+<body>
+
+
+<script>
+
+ //call method____________!!
+
+  let person={
+
+    name:'rajasekhar',
+    gender:'male',
+    age:25
+
+  }
+
+  let person2={
+    name:'lovely raj',
+    surname:'raj',
+    age:23
+  }
+  
+  function raja(city1,city2)
+  {
+    document.write("name :"+ this.name+"<br/> "+"gender :"+this.gender+" <br/>"+"age :"+this.age+"<br/>"+"he is lived in "+city1+","+city2+"<br>")
+  }
+
+ raja.call(person,'delhi','mumbai')
+
+ cities=[
+ 'delhi',
+ 'banglore',
+ 'hydrabad',
+ ]
+
+ raja.apply(person2,cities)
+</script>
+</body>
+</html>
+

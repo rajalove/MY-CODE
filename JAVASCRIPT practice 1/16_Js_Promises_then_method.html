@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+    <link rel="styt/css" href="font/font/css/all.css">
+
+    <style>
+     
+    </style>
+
+</head>
+ 
+<body>
+
+  <script>
+
+    let p=new Promise(function(success,error)
+    {
+      let getingdata=true;
+      if(getingdata)
+      {
+        success('it is success')
+      }
+      else
+      {
+        error('it is error')
+      }
+    })
+    // console.log(p)
+  
+    p.then(function(data)
+    {
+      console.log(data)
+   
+    })
+    document.write(p)
+  
+  </script>
+
+</body>
+</html>
